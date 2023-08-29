@@ -8,7 +8,8 @@ from scrapy.http import TextResponse
 logger = logging.getLogger(__name__)
 
 output_dir = os.getenv("NSC_EXAMINATIONS_DIR", "nsc-examinations")
-os.mkdir(output_dir)
+if not os.path.exists(output_dir):
+    os.mkdir(output_dir)
 
 
 class NSCExaminationsSpider(scrapy.Spider):
