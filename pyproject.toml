@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "scrapper"
 description = "Collection of data scrapping spiders"
 dynamic = ["version"]
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 authors = [
     { name = "Matimu Chauke", email = "matimu@chauke.org" },
 ]
